@@ -4,12 +4,15 @@ const SITE = 'https://bakhirev.github.io/';
 const GITHUB_LINK = 'https://github.com/bakhirev/assayo';
 const languages = {
   en: 'English',
-  zh: '中文',
   es: 'Español',
   fr: 'Français',
   pt: 'Português',
   de: 'Deutsch',
+  zh: '中文',
   ja: '日本語',
+  ko: '한국어',
+  ar: 'العربية',
+  hi: 'हिन्दी',
   ru: 'Русский',
 };
 

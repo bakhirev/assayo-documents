@@ -1,0 +1,12 @@
+/node_modules
+/.vscode
+/.pnp
+/.idea
+/build
+/src/txtToAI/2_removeKeys
+/src/txtToAI/2_removeKeysSplit
+/src/txtToAI/4_returnKeys
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

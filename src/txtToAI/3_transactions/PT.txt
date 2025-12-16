@@ -1,0 +1,89 @@
+Cria um relatório HTML com análise da estatística de commits:
+- o ritmo de trabalho e o número de horas extras;
+- zonas de responsabilidade, número de funcionalidades e bugs;
+- estilo de trabalho dos colegas;
+- a taxa de rotatividade de funcionários e a composição da equipe;
+- localização dos desenvolvedores;
+- calendário de lançamentos e calendário de férias;
+- custo das funcionalidades e do projeto como um todo;
+- lugares para refatoração, arquivos apagados, etc.
+Links:
+Vídeo:
+Sumário
+RELATÓRIO DE ESTATÍSTICAS DE COMMIT
+Como criar e visualizar o relatório?
+Usando servidor público
+acesse o [website]({url})
+siga as instruções
+execute `{code}`
+abra `{file}`
+Use a biblioteca NodeJS
+Use a biblioteca PHP
+Use a biblioteca Python
+Use a biblioteca Ruby
+Use a biblioteca Go
+Use o código fonte
+baixe este repositório
+coloque o arquivo `{file}` no `{dir}`
+ou coloque a pasta `{dir}` no seu repositório (onde o `{file}` está localizado). Você pode mudar o nome. Por exemplo, de `{dir}` para `{to}`.
+Neste caso, é importante que o arquivo `{file}` seja gerado pelo comando para visualização offline.
+Use ações do github
+Adicione [script]({url}) na pasta `{dir}` ou use esta [ação]({action}) do marketplace. Um relatório pronto e atualizado será salvo nos artefatos.
+Use servidor privado
+baixe a imagem [docker]({url});
+execute-o na sua rede local;
+use a interface web para visualizar os relatórios, defina a URL dos dados no parâmetro URL `{param}`:
+URL do contêiner assayo, ele escuta na porta {port};
+URL do seu contêiner com logs git;
+Por padrão, a imagem será executada em `{url}`. Se não funcionar, verifique se a porta {port} está livre.
+Como concatenar autores?
+No diretório raiz do seu projeto, você precisa criar um arquivo `{file}`.
+Exemplo do conteúdo do arquivo:
+Leia mais sobre o formato deste arquivo [aqui]({url}).
+Como exportar dados do git para arquivo txt?
+Para visualização online
+No diretório raiz do seu projeto execute:
+Para visualização offline
+O Git criará um arquivo `{file}`. Este arquivo contém dados para exibir um relatório. A diferença entre o formato online e offline é a presença de uma envoltória para as strings. O formato offline será carregado como um arquivo `{ext}` se você apenas abriu `{report}`
+Se você usar PowerShell no Windows
+Por padrão, a codificação de saída pode não corresponder a UTF-8 e o arquivo de log resultante será ilegível. Antes de salvar o log, você pode mudar a codificação com o comando.
+Ou abra um arquivo salvo e mude manualmente a codificação para UTF-8.
+Como visualizar um relatório sobre um grupo de microserviços?
+Gere para cada arquivo de microserviço `{file}` ({files}, etc.) Você pode fazer isso manualmente ou usar o módulo [Assayo Crawler]({url}) para coleta automática de logs;
+Veja "Como visualizar um relatório online?". Na última etapa, arraste todos os arquivos de uma vez para a janela do navegador.
+Veja "Como visualizar um relatório offline?". Na segunda etapa, arraste todos os arquivos de microserviço ({files}, etc.) para a pasta do relatório (`{dir}`).
+AS MELHORES PRÁTICAS NO PROJETO
+Como assinar commits?
+Siga o [Conventional Commits 1.0.0]({url}). Exemplo:
+número da tarefa no rastreador de tarefas `({task})`
+tipo de trabalho `({type}, etc.)`
+funcionalidade `({page} - nova página no site ou nova função, use uma (duas) palavra(s) curta(s) ou uma abreviatura)`
+qual problema foi resolvido `({text})`
+Como adicionar verificação para a mensagem de commit?
+Use arquivo {file}
+Crie arquivo `{file}` na pasta `{dir}`
+Adicione este texto no arquivo:
+Use pacote [{name}]({url})
+Use pacote {name}
+Adicione no arquivo `{file}` propriedade `{property}`:
+Execute comando `{code}`
+SOBRE ESTE APLICATIVO
+Como personalizar a interface?
+Você pode criar sua própria temática de interface. Opções:
+**Título**. Você pode definir título de documento padrão no parâmetro de URL `{property}`. Exemplo: `{url}`
+**Tema visual**. Para isso, você precisa preparar um arquivo CSS com novos estilos e especificar sua URL no parâmetro `{property}`. Exemplo: `{url}`. Você pode usar nomes de classe como selectores. A maioria deles não muda nas novas versões.
+**Língua**. Você pode definir língua no parâmetro de URL `{property}`. Exemplo: `{url}`
+**Exemplo:** [demo]({url})
+Como reconstruir o relatório HTML a partir do código fonte?
+baixe este repositório `{code}`
+a nova construção HTML estará na pasta `{dir}`
+Como adicionar ou editar uma tradução?
+Você pode adicionar uma nova tradução ou corrigir uma existente na pasta `{dir}`.
+[Instrução]({url})
+Arquitetura
+Arquitetura geral de microserviços
+[Reports showcase UI]({url}) exibe uma lista de relatórios disponíveis. Cada relatório consiste em um título, descrição e uma lista de repositórios.
+[Crawler service]({url}) coleta logs do repositório para o relatório.
+[Log visualization UI]({url}) **(você está aqui)** exibe relatório. Precisa de um arquivo de log para funcionar.
+Feedback, comentários
+método prioritário de comunicação

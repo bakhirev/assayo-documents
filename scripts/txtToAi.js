@@ -29,7 +29,7 @@ function getTxtFileName(path, suffix) {
 }
 
 function getParts(text) {
-  const limit = 50;
+  const limit = 35;
   const lines = text.split('\n');
   const size = Math.ceil(lines.length / limit);
   const parts = [];
@@ -57,7 +57,7 @@ getFileList(`${WORKSPACE}/4_returnKeys`).forEach((name) => {
 
 // Save new removedKeys and output
 getFileList(`${WORKSPACE}/1_origin`).forEach((name) => {
-  const origin = getTextFromFile(`./1_origin/${name}`);
+  const origin = getTextFromFile(`${WORKSPACE}/1_origin/${name}`);
   const originWithoutKeys = getTextWithoutKeys(origin);
   const originFileName = getTxtFileName(`${WORKSPACE}/2_removeKeys/${name}`);
   setTextFromFile(originFileName, originWithoutKeys);

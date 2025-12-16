@@ -1,0 +1,89 @@
+Créez un rapport HTML pour analyser les statistiques des commits:
+- le rythme de travail et le nombre d'heures supplémentaires;
+- les domaines de responsabilité, le nombre de fonctionnalités et d'erreurs;
+- le style de travail des collègues;
+- le taux de rotation des employés et la composition de l'équipe;
+- la localisation des développeurs;
+- l'emploi du temps des lancés et des vacances;
+- le coût des fonctionnalités et du projet dans son ensemble;
+- les endroits à refactoriser, les fichiers supprimés, etc.
+Liens:
+Vidéo:
+Table des matières
+RAPPORT D'ANALYSE DES COMMITS
+Comment créer et visualiser le rapport?
+En utilisant un serveur public
+accédez au [site web]({url})
+suivez les instructions
+exécutez `{code}`
+ouvrez `{file}`
+Utiliser la bibliothèque NodeJS
+Utiliser la bibliothèque PHP
+Utiliser la bibliothèque Python
+Utiliser la bibliothèque Ruby
+Utiliser la bibliothèque Go
+Utiliser le code source
+télécharger ce répertoire
+placer le fichier `{file}` dans `{dir}`
+ou placer le dossier `{dir}` dans votre répertoire (où se trouve `{file}`). Vous pouvez changer le nom. Par exemple, de `{dir}` à `{to}`.
+Dans ce cas, il est important que le fichier `{file}` soit généré par la commande pour la visualisation en ligne.
+Utiliser les actions GitHub
+Ajouter [script]({url}) dans le dossier `{dir}` ou utiliser cette [action]({action}) du marketplace. Un rapport prêt et mis à jour sera enregistré dans les artefacts.
+Utiliser un serveur privé
+télécharger l'image [docker]({url});
+exécuter dans votre réseau local;
+utiliser l'interface web pour visualiser les rapports, définir l'URL des données dans le paramètre URL `{param}`:
+URL du conteneur assayo, écoute sur le port {port};
+URL de votre conteneur avec les journaux git;
+Par défaut, l'image s'exécutera sur `{url}`. Si cela ne fonctionne pas, vérifiez si le port {port} est libre.
+Comment concaténer les auteurs?
+Dans le répertoire racine de votre projet, vous devez créer un fichier `{file}`.
+Exemple du contenu du fichier:
+Lisez plus sur le format de ce fichier [ici]({url}).
+Comment exporter les données de git dans un fichier txt?
+Pour la visualisation en ligne
+Dans le répertoire racine de votre projet exécutez:
+Pour la visualisation hors ligne
+Git créera un fichier `{file}`. Ce fichier contient les données pour afficher un rapport. La différence entre le format en ligne et hors ligne est la présence d'un enveloppement pour les chaînes. Le format hors ligne sera chargé comme un fichier `{ext}` si vous avez ouvert uniquement `{report}`
+Si vous utilisez PowerShell sur Windows
+Par défaut, le codage de sortie peut ne pas correspondre à UTF-8 et le fichier de journal résultant sera illisible. Avant de sauvegarder le journal, vous pouvez changer le codage avec la commande.
+Ou ouvrez un fichier sauvegardé et changez manuellement le codage en UTF-8.
+Comment visualiser un rapport sur un groupe de microservices?
+Générer pour chaque fichier de microservice `{file}` ({files}, etc.). Vous pouvez le faire manuellement ou utiliser le module [Assayo Crawler]({url}) pour la collecte automatique des journaux;
+Voir « Comment visualiser un rapport en ligne? ». À l'étape finale, faites glisser tous les fichiers à la fois dans la fenêtre du navigateur.
+Voir « Comment visualiser un rapport hors ligne? ». À l'étape deux, faites glisser tous les fichiers de microservice ({files}, etc.) dans le dossier du rapport (`{dir}`).
+LES MEILLEURES PRACTIQUES DANS LE PROJET
+Comment signer les commits?
+Suivez le [Conventional Commits 1.0.0]({url}). Exemple:
+numéro de tâche dans le suivi de tâches `({task})`
+type de travail `({type}, etc.)`
+fonctionnalité `({page} - nouvelle page sur le site ou nouvelle fonction, utilisez un (deux) mot(s) court(s) ou une abréviation)`
+quel problème a été résolu `({text})`
+Comment ajouter une vérification pour le message de commit?
+Utiliser le fichier {file}
+Créer le fichier `{file}` dans le dossier `{dir}`
+Ajouter ce texte dans le fichier:
+Utiliser le package [{name}]({url})
+Utiliser le package {name}
+Ajouter dans le fichier `{file}` la propriété `{property}`:
+Exécuter la commande `{code}`
+AU SUJET DE CETTE APPLICATION
+Comment personnaliser l'interface?
+Vous pouvez créer votre propre thème d'interface. Options:
+**Titre**. Vous pouvez définir le titre du document par défaut dans le paramètre URL `{property}`. Exemple: `{url}`
+**Thème visuel**. Pour ce faire, vous devez préparer un fichier CSS avec de nouveaux styles et spécifier son URL dans le paramètre `{property}`. Exemple: `{url}`. Vous pouvez utiliser les noms de classe comme sélecteurs. La plupart d'entre eux ne changent pas dans les nouvelles versions.
+**Langue**. Vous pouvez définir la langue dans le paramètre URL `{property}`. Exemple: `{url}`
+**Exemple**: [démo]({url})
+Comment reconstruire le rapport HTML à partir du code source?
+télécharger ce dépôt `{code}`
+la nouvelle construction HTML se trouvera dans le dossier `{dir}`
+Comment ajouter ou éditer une traduction?
+Vous pouvez ajouter une nouvelle traduction ou corriger une existante dans le dossier `{dir}`.
+[Instruction]({url})
+Architecture
+Architecture générale des microservices
+[Reports showcase UI]({url}) affiche une liste de rapports disponibles. Chaque rapport comprend un titre, une description et une liste de dépôts.
+[Crawler service]({url}) collecte les journaux du dépôt pour le rapport.
+[Visualisation des journaux UI]({url}) **(vous êtes ici)** affiche le rapport. Il a besoin d'un fichier journal pour fonctionner.
+Retours, commentaires
+méthode de communication prioritaire
