@@ -1,2 +1,2 @@
-# assayo-documents
+# Documents
 Documents and translations for Assayo

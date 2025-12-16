@@ -1,0 +1,90 @@
+§ main.title: Создаёт HTML-отчёт с анализом статистики коммитов:
+§ main.features:
+- текучка кадров и состав команд;
+- местоположение разработчиков;
+- график релизов и отпусков;
+- темп работы и количество переработок;
+- зоны ответственности, объем фичей и багов;
+- стоимость фичей и проекта в целом;
+- стиль работы коллег;
+- места для рефакторинга, удалённые файлы и т.п.
+§ main.links: Ссылки:
+§ main.videos: Видео:
+§ main.tableOfContents: Содержание
+§ report.title: ОТЧЁТ ПО СТАТИСТИКЕ КОММИТОВ
+§ report.create.title: Как создать и посмотреть отчёт?
+§ report.create.public.title: Через публичный сервер
+§ report.create.public.step1: перейдите на [сайт]({url})
+§ report.create.public.step2: следуйте инструкциям
+§ report.create.any.run: выполнить `{code}`
+§ report.create.any.open: открыть `{file}`
+§ report.create.js.title: Используя библиотеку NodeJS
+§ report.create.php.title: Используя библиотеку PHP
+§ report.create.python.title: Используя библиотеку Python
+§ report.create.ruby.title: Используя библиотеку Ruby
+§ report.create.go.title: Используя библиотеку Go
+§ report.create.src.title: Без установки библиотек
+§ report.create.src.step1: скачать этот репозиторий
+§ report.create.src.step2: перетащить файл `{file}` в папку `{dir}`
+§ report.create.src.step3: или перетащить папку `{dir}` к себе в репозиторий (туда, где лежит `{file}`). Можно сменить название. Например с `{dir}` на `{to}`
+§ report.create.src.step4: В этом случае важно, чтобы файл `{file}` был сгенерирован командой для офлайн просмотра.
+§ report.create.github.title: Через github actions
+§ report.create.github.description: Добавьте [скрипт]({url}) в папку `{dir}` или используйте этот [action]({action}) из официального магазина. Готовый свежий отчёт по проекту будет лежать в артефактах.
+§ report.create.private.title: С помощью приватного сервера
+§ report.create.private.step1: скачайте [docker образ]({url});
+§ report.create.private.step2: поднимите его в локальной сети;
+§ report.create.private.step3: для просмотра отчётов используйте веб-интерфейс указывая ему адресс, где лежат данные, в URL-параметре `{param}`:
+§ report.create.private.example1: URL адресс контейнера assayo, он слушает {port} порт;
+§ report.create.private.example2: URL адресс вашего контейнера с логами git;
+§ report.create.private.step4: По умолчанию образ запустится по адресу `{url}` Если не получилось проверьте свободен ли у вас `{port}` порт.
+§ report.concat.title: Как объединить авторов коммитов в отчёте?
+§ report.concat.description: В корневой директории вашего проекта нужно создать файл `{file}`
+§ report.concat.example: Пример содержания файла:
+§ report.concat.more: Подробнее про формат этого файла можно прочитать [тут]({url}).
+§ report.logFile.title: Как выгрузить данные из git в txt файл?
+§ report.logFile.online.title: Для онлайн просмотра
+§ report.logFile.online.description: В корневой директории вашего проекта выполнить:
+§ report.logFile.offline.title: Для офлайн просмотра
+§ report.logFile.offline.description: Git создаст файл `{file}`. Он содержит данные для построения отчёта. Разница между онлайн и офлайн форматом в наличие обёртки для строк. Оффлайн формат будет подтягиваться, как `{ext}` файл если вы просто открыли `{report}`
+§ report.logFile.powerShell.title: Если вы используете PowerShell в Windows
+§ report.logFile.powerShell.description: По умолчанию, поток вывода не совпадает с UTF-8 и итоговый файл становится нечитаемым. Перед сохранением файла с логом вы можете изменить кодировку командой:
+§ report.logFile.powerShell.example: Или откройте сохраненный файл и вручную измените кодировку на UTF-8.
+§ report.logFile.group.title: Как посмотреть отчёт по группе микросервисов?
+§ report.logFile.group.step1: Сгенерировать для каждого микросервиса файл `{file}` ({files} и т.д.). Вы можете сделать это в ручную, или использовать модуль [Assayo Crawler]({url}) для автоматического сбора логов;
+§ report.logFile.group.step2: См. «Как посмотреть отчёт онлайн?». На последнем шаге перетащить сразу все файлы в окно браузера.
+§ report.logFile.group.step3: См. «Как посмотреть отчёт офлайн?». На втором шаге перетащить все файлы микросервисов ({files} и т.д.) в папку отчета (`{dir}`).
+§ practice.title: ЕЖЕДНЕВНЫЕ ПРАКТИКИ В ПРОЕКТЕ
+§ practice.message.title: Как подписывать коммиты?
+§ practice.message.description: Следуйте практике [Conventional Commits 1.0.0]({url}). Например:
+§ practice.message.example.task: номер задачи в таск трекере `({task})`
+§ practice.message.example.type: тип работы `({type} и т.д.)`
+§ practice.message.example.page: фича `({page} - раздел сайта, страница или новый функционал, одним словом)`
+§ practice.message.example.text: какую проблему решали `({text})`
+§ practice.autoCheck: Как добавить автоматическую проверку подписи коммита?
+§ practice.commitMessage.title: Используя файл {file}
+§ practice.commitMessage.step1: Создайте файл `{file}` в папке `{dir}`
+§ practice.commitMessage.step2: Добавьте в файл следующий текст:
+§ practice.preCommit.title: Используя пакет [{name}]({url})
+§ practice.preCommit.simpleTitle: Используя пакет {name}
+§ practice.preCommit.step1: Добавьте в файл `{file}` блок `{property}`:
+§ practice.preCommit.step2: Выполните команду `{code}`
+§ about.title: ОБ ЭТОМ ПРИЛОЖЕНИИ
+§ about.theme.title: Как брендировать отчёт?
+§ about.theme.description: Вы можете написать свою тему для отчёта. Можно менять:
+§ about.theme.params.title: **Заголовок**. Вы можете указать его в URL-параметре `{property}`. Например: `{url}`
+§ about.theme.params.css: **Визуальную тему**. Для этого нужно подготовить CSS файл с новыми стилями и указать его адрес в URL-параметре `{property}`. Например: `{url}`. Вы можете использовать имена классов в качестве селекторов. Большинство из них не меняется в при выходе новой версий.
+§ about.theme.params.language: **Язык**. Вы можете указать его в URL-параметре `{property}`. Например: `{url}`
+§ about.theme.example: **Например:** [демо]({url})
+§ about.build.title: Как пересобрать файл отчёта из исходного кода?
+§ about.build.step1: скачать этот репозиторий `{code}`
+§ about.build.step2: свежая сборка будет в папке `{dir}`
+§ about.translations.title: Как добавить или отредактировать перевод?
+§ about.translations.description: Вы можете добавить новый перевод или поправить текущий в разделе `{dir}`.
+§ about.translations.example: [Инструкция]({url})
+§ about.architecture.title: Архитектура
+§ about.microservices.title: Общая архитектура микросервисов
+§ about.microservices.showcase: [Reports showcase UI]({url}) отображение списка отчётов. Каждый отчёт имеет название, описание и список репозиториев.
+§ about.microservices.crawler: [Crawler service]({url}) сборка, склейка, обработка логов из репозиториев для отчётов.
+§ about.microservices.visualization: [Log visualization UI]({url}) **(вы тут)** отображение отчётов. Для работы ему нужен log файл с данными.
+§ about.contacts.title: Пожелания, предложения, замечания
+§ about.contacts.priority: приоритетный способ связи

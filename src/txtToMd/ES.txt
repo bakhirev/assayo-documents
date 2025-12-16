@@ -1,0 +1,90 @@
+§ main.title: Crea un informe HTML con un análisis de la estadística de commit:
+§ main.features:
+- el ritmo de trabajo y la cantidad de horas extras;
+- zonas de responsabilidad, número de características y errores;
+- estilo de trabajo de los colegas;
+- la tasa de rotación de empleados y la composición del equipo;
+- ubicación de los desarrolladores;
+- calendario de lanzamientos y calendario de vacaciones;
+- costo de las características y del proyecto en su conjunto;
+- lugares para refactorizar, archivos eliminados, etc.
+§ main.links: Enlaces:
+§ main.videos: Video:
+§ main.tableOfContents: Índice
+§ report.title: REPORTE DE ESTADÍSTICAS DE COMMIT
+§ report.create.title: ¿Cómo crear y ver el informe?
+§ report.create.public.title: Usando servidor público
+§ report.create.public.step1: vaya al [sitio web]({url})
+§ report.create.public.step2: siga las instrucciones
+§ report.create.any.run: ejecute `{code}`
+§ report.create.any.open: abre `{file}`
+§ report.create.js.title: Usar la biblioteca NodeJS
+§ report.create.php.title: Usar la biblioteca PHP
+§ report.create.python.title: Usar la biblioteca Python
+§ report.create.ruby.title: Usar la biblioteca Ruby
+§ report.create.go.title: Usar la biblioteca Go
+§ report.create.src.title: Usar el código fuente
+§ report.create.src.step1: descargue este repositorio
+§ report.create.src.step2: coloque el archivo `{file}` en `{dir}`
+§ report.create.src.step3: o coloque la carpeta `{dir}` en su repositorio (donde se encuentra `{file}`). Puede cambiar el nombre. Por ejemplo, de `{dir}` a `{to}`.
+§ report.create.src.step4: En este caso, es importante que el archivo `{file}` se genere mediante un comando para la visualización en línea.
+§ report.create.github.title: Usar github actions
+§ report.create.github.description: Agregue [script]({url}) en la carpeta `{dir}` o use esta [acción]({action}) del mercado. Un informe listo y actualizado se guardará en los artefactos.
+§ report.create.private.title: Usar servidor privado
+§ report.create.private.step1: descargue la imagen [docker]({url});
+§ report.create.private.step2: ejecútelo en su red local;
+§ report.create.private.step3: use la interfaz web para ver los informes, establezca la URL de los datos en el parámetro URL `{param}`:
+§ report.create.private.example1: URL del contenedor assayo, escucha en el puerto {port};
+§ report.create.private.example2: URL de su contenedor con registros git;
+§ report.create.private.step4: Por defecto, la imagen se ejecutará en `{url}`. Si no funciona, verifique si el puerto {port} está libre.
+§ report.concat.title: ¿Cómo concatenar autores?
+§ report.concat.description: En el directorio raíz de su proyecto, necesita crear un archivo `{file}`.
+§ report.concat.example: Ejemplo del contenido del archivo:
+§ report.concat.more: Lea más sobre el formato de este archivo [aquí]({url}).
+§ report.logFile.title: ¿Cómo exportar datos de git a un archivo txt?
+§ report.logFile.online.title: Para la visualización en línea
+§ report.logFile.online.description: En el directorio raíz de su proyecto ejecute:
+§ report.logFile.offline.title: Para la visualización ofline
+§ report.logFile.offline.description: Git creará un archivo `{file}`. Este archivo contiene datos para mostrar un informe. La diferencia entre el formato en línea y ofline es la presencia de una envoltura para las cadenas. El formato ofline se arrastrará como un archivo `{ext}` si solo abrió `{report}`
+§ report.logFile.powerShell.title: Si usa PowerShell en Windows
+§ report.logFile.powerShell.description: Por defecto, la codificación de salida puede no coincidir con UTF-8 y el archivo de registro resultante será ilegible. Antes de guardar el registro, puede cambiar la codificación con el comando.
+§ report.logFile.powerShell.example: O abra un archivo guardado y cambie manualmente la codificación a UTF-8.
+§ report.logFile.group.title: ¿Cómo ver un informe sobre un grupo de microservicios?
+§ report.logFile.group.step1: Generar para cada archivo de microservicio `{file}` ({files}, etc.) Puede hacerlo manualmente o usar el módulo [Assayo Crawler]({url}) para la recopilación automática de registros;
+§ report.logFile.group.step2: Ver «Cómo ver un informe en línea?». En el último paso, arrastre todos los archivos a la vez a la ventana del navegador.
+§ report.logFile.group.step3: Ver «Cómo ver un informe en offline?». En el segundo paso, arrastre todos los archivos de microservicio ({files}, etc.) a la carpeta del informe (`{dir}`).
+§ practice.title: LAS MEJORES PRÁCTICAS EN EL PROYECTO
+§ practice.message.title: ¿Cómo firmar los commits?
+§ practice.message.description: Siga el [Conventional Commits 1.0.0]({url}). Ejemplo:
+§ practice.message.example.task: número de tarea en el seguimiento de tareas `({task})`
+§ practice.message.example.type: tipo de trabajo `({type}, etc.)`
+§ practice.message.example.page: característica `({page} - nueva página en el sitio o nueva función, use una (dos) palabra(s) corta(s) o una abreviatura)`
+§ practice.message.example.text: qué problema se resolvió `({text})`
+§ practice.autoCheck: Cómo agregar comprobación para el mensaje de commit?
+§ practice.commitMessage.title: Usar archivo {file}
+§ practice.commitMessage.step1: Crear archivo `{file}` en carpeta `{dir}`
+§ practice.commitMessage.step2: Agregar este texto en archivo:
+§ practice.preCommit.title: Usar paquete [{name}]({url})
+§ practice.preCommit.simpleTitle: Usar paquete {name}
+§ practice.preCommit.step1: Agregar en archivo `{file}` propiedad `{property}`:
+§ practice.preCommit.step2: Ejecutar comando `{code}`
+§ about.title: SOBRE ESTA APLICACIÓN
+§ about.theme.title: ¿Cómo personalizar la interfaz?
+§ about.theme.description: Puede crear su propia temática de interfaz. Opciones:
+§ about.theme.params.title: **Título**. Puede establecer el título de documento predeterminado en el parámetro de URL `{property}`. Ejemplo: `{url}`
+§ about.theme.params.css: **Tema visual**. Para ello, necesita preparar un archivo CSS con nuevos estilos y especificar su URL en el parámetro `{property}`. Ejemplo: `{url}`. Puede usar nombres de clase como selectores. La mayoría de ellos no cambian en nuevas versiones.
+§ about.theme.params.language: **Idioma**. Puede establecer el idioma en el parámetro de URL `{property}`. Ejemplo: `{url}`
+§ about.theme.example: **Ejemplo:** [demo]({url})
+§ about.build.title: ¿Cómo reconstruir el informe HTML desde el código fuente?
+§ about.build.step1: descargar este repositorio `{code}`
+§ about.build.step2: la nueva construcción HTML estará en la carpeta `{dir}`
+§ about.translations.title: ¿Cómo agregar o editar una traducción?
+§ about.translations.description: Puede agregar una nueva traducción o corregir una existente en la carpeta `{dir}`.
+§ about.translations.example: [Instrucción]({url})
+§ about.architecture.title: Arquitectura
+§ about.microservices.title: Arquitectura general de microservicios
+§ about.microservices.showcase: [Reports showcase UI]({url}) muestra una lista de informes disponibles. Cada informe consta de un título, descripción y una lista de repositorios.
+§ about.microservices.crawler: [Crawler service]({url}) recopila registros de repositorio para el informe.
+§ about.microservices.visualization: [Log visualization UI]({url}) **(estás aquí)** muestra el informe. Necesita un archivo de registro para funcionar.
+§ about.contacts.title: Retroalimentación, comentarios
+§ about.contacts.priority: método prioritario de comunicación

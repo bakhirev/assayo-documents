@@ -1,0 +1,89 @@
+Crea un informe HTML con un análisis de la estadística de commit:
+- el ritmo de trabajo y la cantidad de horas extras;
+- zonas de responsabilidad, número de características y errores;
+- estilo de trabajo de los colegas;
+- la tasa de rotación de empleados y la composición del equipo;
+- ubicación de los desarrolladores;
+- calendario de lanzamientos y calendario de vacaciones;
+- costo de las características y del proyecto en su conjunto;
+- lugares para refactorizar, archivos eliminados, etc.
+Enlaces:
+Video:
+Índice
+REPORTE DE ESTADÍSTICAS DE COMMIT
+¿Cómo crear y ver el informe?
+Usando servidor público
+vaya al [sitio web]({url})
+siga las instrucciones
+ejecute `{code}`
+abre `{file}`
+Usar la biblioteca NodeJS
+Usar la biblioteca PHP
+Usar la biblioteca Python
+Usar la biblioteca Ruby
+Usar la biblioteca Go
+Usar el código fuente
+descargue este repositorio
+coloque el archivo `{file}` en `{dir}`
+o coloque la carpeta `{dir}` en su repositorio (donde se encuentra `{file}`). Puede cambiar el nombre. Por ejemplo, de `{dir}` a `{to}`.
+En este caso, es importante que el archivo `{file}` se genere mediante un comando para la visualización en línea.
+Usar github actions
+Agregue [script]({url}) en la carpeta `{dir}` o use esta [acción]({action}) del mercado. Un informe listo y actualizado se guardará en los artefactos.
+Usar servidor privado
+descargue la imagen [docker]({url});
+ejecútelo en su red local;
+use la interfaz web para ver los informes, establezca la URL de los datos en el parámetro URL `{param}`:
+URL del contenedor assayo, escucha en el puerto {port};
+URL de su contenedor con registros git;
+Por defecto, la imagen se ejecutará en `{url}`. Si no funciona, verifique si el puerto {port} está libre.
+¿Cómo concatenar autores?
+En el directorio raíz de su proyecto, necesita crear un archivo `{file}`.
+Ejemplo del contenido del archivo:
+Lea más sobre el formato de este archivo [aquí]({url}).
+¿Cómo exportar datos de git a un archivo txt?
+Para la visualización en línea
+En el directorio raíz de su proyecto ejecute:
+Para la visualización ofline
+Git creará un archivo `{file}`. Este archivo contiene datos para mostrar un informe. La diferencia entre el formato en línea y ofline es la presencia de una envoltura para las cadenas. El formato ofline se arrastrará como un archivo `{ext}` si solo abrió `{report}`
+Si usa PowerShell en Windows
+Por defecto, la codificación de salida puede no coincidir con UTF-8 y el archivo de registro resultante será ilegible. Antes de guardar el registro, puede cambiar la codificación con el comando.
+O abra un archivo guardado y cambie manualmente la codificación a UTF-8.
+Cómo ver un informe sobre un grupo de microservicios?
+Generar para cada archivo de microservicio `{file}` ({files}, etc.) Puede hacerlo manualmente o usar el módulo [Assayo Crawler]({url}) para la recopilación automática de registros;
+Ver «Cómo ver un informe en línea?». En el último paso, arrastre todos los archivos a la vez a la ventana del navegador.
+Ver «Cómo ver un informe en offline?». En el segundo paso, arrastre todos los archivos de microservicio ({files}, etc.) a la carpeta del informe (`{dir}`).
+LAS MEJORES PRÁCTICAS EN EL PROYECTO
+Cómo firmar los commits?
+Siga el [Conventional Commits 1.0.0]({url}). Ejemplo:
+número de tarea en el seguimiento de tareas `({task})`
+tipo de trabajo `({type}, etc.)`
+característica `({page} - nueva página en el sitio o nueva función, use una (dos) palabra(s) corta(s) o una abreviatura)`
+qué problema se resolvió `({text})`
+Cómo agregar comprobación para el mensaje de commit?
+Usar archivo {file}
+Crear archivo `{file}` en carpeta `{dir}`
+Agregar este texto en archivo:
+Usar paquete [{name}]({url})
+Usar paquete {name}
+Agregar en archivo `{file}` propiedad `{property}`:
+Ejecutar comando `{code}`
+SOBRE ESTA APLICACIÓN
+Cómo personalizar la interfaz?
+Puede crear su propia temática de interfaz. Opciones:
+**Título**. Puede establecer el título de documento predeterminado en el parámetro de URL `{property}`. Ejemplo: `{url}`
+**Tema visual**. Para ello, necesita preparar un archivo CSS con nuevos estilos y especificar su URL en el parámetro `{property}`. Ejemplo: `{url}`. Puede usar nombres de clase como selectores. La mayoría de ellos no cambian en nuevas versiones.
+**Idioma**. Puede establecer el idioma en el parámetro de URL `{property}`. Ejemplo: `{url}`
+**Ejemplo:** [demo]({url})
+Cómo reconstruir el informe HTML desde el código fuente?
+descargar este repositorio `{code}`
+la nueva construcción HTML estará en la carpeta `{dir}`
+Cómo agregar o editar una traducción?
+Puede agregar una nueva traducción o corregir una existente en la carpeta `{dir}`.
+[Instrucción]({url})
+Arquitectura
+Arquitectura general de microservicios
+[Reports showcase UI]({url}) muestra una lista de informes disponibles. Cada informe consta de un título, descripción y una lista de repositorios.
+[Crawler service]({url}) recopila registros de repositorio para el informe.
+[Log visualization UI]({url}) **(estás aquí)** muestra el informe. Necesita un archivo de registro para funcionar.
+Retroalimentación, comentarios
+método prioritario de comunicación
